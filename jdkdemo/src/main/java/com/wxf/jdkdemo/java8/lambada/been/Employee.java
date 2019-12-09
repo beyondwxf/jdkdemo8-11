@@ -99,13 +99,13 @@ public class Employee {
         if (age != other.age) {
             return false;
         }
-        if (id!= other.id) {
+        if (id != other.id) {
             return false;
         }
         if (name == null) {
-            if (other.name!=null) {
+            if (other.name != null) {
                 return false;
-            }else if (!name.equals(other.name)) {
+            } else if (!name.equals(other.name)) {
                 return false;
             }
         }
@@ -124,5 +124,9 @@ public class Employee {
                 ", age=" + age +
                 ", salary=" + salary +
                 '}';
+    }
+
+    public String show() {
+        return "show:::测试饮用方法";
     }
 }
