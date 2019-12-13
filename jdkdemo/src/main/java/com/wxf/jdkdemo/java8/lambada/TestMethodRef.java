@@ -79,6 +79,7 @@ public class TestMethodRef {
      * @author wangxuefei
      * @date 2019/12/9
      */
+    @Test
     public void testNew4() {
         BiPredicate<String, String> bp = (x, y) -> x.equals(y);
         System.out.println(bp.test("aaaaaaaa", "sssssss"));
